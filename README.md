@@ -1,6 +1,6 @@
 # VBA-Challenge - instructions
 
-* Create a script that will loop through all the stocks for one year and output the following information.
+* In this homework, students were giving stock data including the ticket symbol, daily opening and closing price and daily stock volume. Students were asked to create a script that will loop through all the stocks for one year and output the following summary table.
 
   * The ticker symbol.
 
@@ -10,12 +10,15 @@
 
   * The total stock volume of the stock.
 
-* You should also have conditional formatting that will highlight positive change in green and negative change in red.
+  * Conditional formatting that will highlight positive change in green and negative change in red.
+
+* Loop through new summary created above and output "Greatest % increase", "Greatest % decrease" and "Greatest total volume". 
 
 
-## BONUS
+* Make the appropriate adjustments that will allow it to run on every worksheet, i.e., every year, just by running the VBA script once.
 
-* Your solution will also be able to return the stock with the "Greatest % increase", "Greatest % decrease" and "Greatest total volume". The solution will look as follows:
+# Summary of Codes used
+ * For each ws in Worksheets, Next ws
+ * lastrow1 = ws.Cells(Rows.Count, 1).End(xlUp).Row
+ * For loops
 
-
-* Make the appropriate adjustments to your VBA script that will allow it to run on every worksheet, i.e., every year, just by running the VBA script once.
